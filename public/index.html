@@ -20,6 +20,19 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <!-- Star Wars Opening Crawl -->
+    <div class="crawl-container" id="crawl-container">
+      <div class="crawl-perspective">
+        <div class="crawl-text">
+          <p>A long time ago in a galaxy far,<br/>far away....</p>
+          <h1>IA CHAT</h1>
+          <p>An artificial intelligence awakens, ready to assist you across the digital cosmos.</p>
+          <p>Built by Angel and powered by Gemini, this conversational AI stands ready to answer your questions and engage in meaningful dialogue.</p>
+          <p>May the intelligence be with you...</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ============================================================
          CHANGE THE TEXT BELOW to make this app yours.
          e.g. swap "AI Chat" for "Aviation Co-Pilot" or "Helper Bot".
@@ -53,5 +66,12 @@
     </main>
 
     <script type="module" src="/app.js"></script>
+    <script>
+      // Hide crawl after animation completes
+      setTimeout(() => {
+        const crawlContainer = document.getElementById('crawl-container');
+        crawlContainer.style.display = 'none';
+      }, 6500);
+    </script>
   </body>
 </html>
